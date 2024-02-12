@@ -17,7 +17,15 @@
     @include('partials.header')
     <main>
 
+        <div class="container py-5">
+            <div class="col-12 py-5">
+                <h1>vuoto</h1>
+            </div>
+        </div>
+        
     </main>
+    @include ('partials.infoBanner')
+    @include('partials.footer')
 </body>
 
 </html>

@@ -14,13 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $socials = config('footer_socials');
+    $footer_lists = config('footer_list');
+    $banner_infos = config('banner_infos');
+    return view('home', compact('socials', 'footer_lists', 'banner_infos'));
 })->name('home');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $socials = config('footer_socials');
+    $footer_lists = config('footer_list');
+    $banner_infos = config('banner_infos');
+    return view('home', compact('socials', 'footer_lists', 'banner_infos'));
 })->name('comics');
 
 Route::get('/movies', function () {
-    return view('movies');
+    $socials = config('footer_socials');
+    $footer_lists = config('footer_list');
+    $banner_infos = config('banner_infos');
+    return view('home', compact('socials', 'footer_lists', 'banner_infos'));
 })->name('movies');
