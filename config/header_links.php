@@ -40,4 +40,8 @@ return [
         'name' => 'SHOP',
         'url' => 'shop',
     ],
+    [
+        'name' => 'HOME',
+        'url' => '/',
+    ],
 ];
