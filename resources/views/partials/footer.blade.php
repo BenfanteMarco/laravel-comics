@@ -23,7 +23,7 @@
 
                 <div class="col-6">
                     <div class="d-flex justify-content-end ">
-                        <img class="logo" src=" ../img/dc-logo-bg.png" alt="">
+                        <img class="logo" src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" alt="">
                     </div>
                 </div>
 

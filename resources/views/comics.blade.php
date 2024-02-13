@@ -20,6 +20,33 @@
             <span class="default-badge-bg">CURRENT SERIES</span>
         </div>
 
+        <div class="my-bg-black py-5">
+            <div class="container">
+                <div class="row">
+                    
+                    @foreach ($comics as $comic)
+                        <div class="col-2 card_container">
+
+                            <div>
+                                <div class="img-container p-relative">
+                                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
+                                    <span class="price-tag">{{ $comic['price'] }}</span>
+                                </div>
+                                <div>
+                                    <h5>{{ $comic['series'] }}</h5>
+                                </div>
+                            </div>
+
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="text-center mt-5">
+                    <button type="button" class="default-btn"> LOAD MORE </button>
+                </div>
+            </div>
+        </div>
+
         <div class="my-bg-blue">
             @include ('partials.infoBanner')
         </div>

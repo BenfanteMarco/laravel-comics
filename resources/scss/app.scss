@@ -6,8 +6,27 @@
     padding: 0;
 }
 
-.my-bg-blue {
-    background-color: #0282F9;
+main {
+    h3 {
+        color: white;
+        padding: 100px 0px;
+    }
+
+    button {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 7px 60px;
+        transition: 0.5s;
+        background-color: #0282F9;
+        border: 1px solid #0282F9;
+        font-size: 14px;
+
+        &:hover {
+            border-radius: 20px;
+        }
+
+    }
 }
 
 // BANNER
@@ -52,6 +71,21 @@
 
 
 header {
+
+    .top-info-header {
+        background-color: #0282f9;
+
+        li:first-child a {
+            padding-right: 50px;
+        }
+
+        li a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: small;
+        }
+    }
 
     .logo {
         width: 65px;
@@ -182,4 +216,58 @@ footer {
         }
     }
 
+}
+
+.card_container {
+
+    padding: 30px 0px;
+
+    h5 {
+        color: white;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+
+
+    .img-container {
+
+
+        img {
+            width: 190px;
+            height: 190px;
+            object-fit: cover;
+            object-position: top;
+            transition: 0.7s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+        }
+
+        .price-tag {
+            color: white;
+            background-color: #0282F9;
+            padding: 2px 7px;
+            font-size: 13px;
+            border-radius: 10px;
+            position: relative;
+            bottom: 180px;
+            left: 155px;
+            transition: 0.7s;
+
+        }
+
+    }
+}
+
+
+.my-bg-blue {
+    background-color: #0282F9;
+}
+
+.my-bg-black {
+    background-color: #1C1C1C
 }
