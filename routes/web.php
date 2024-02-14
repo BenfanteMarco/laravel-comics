@@ -30,6 +30,24 @@ Route::get('/comics', function () {
     return view('comics', compact('socials', 'footer_lists', 'banner_infos', 'comics', 'header_links'));
 })->name('comics');
 
+Route::get('/comics/comic_info/{param}', function ($param) {
+    $socials = config('footer_socials');
+    $header_links = config('header_links');
+    $footer_lists = config('footer_list');
+    $banner_infos = config('banner_infos');
+    $comics = config('comics');
+
+    $single_comic = NULL;
+
+    foreach ($comics as $item) {
+        if ($item['id'] == $param) {
+            $single_comic = $item;
+        };
+    };
+
+    return view('comic_detail', compact('socials', 'footer_lists', 'banner_infos', 'comics', 'header_links', 'single_comic'));
+})->name('comic_info');
+
 Route::get('/movies', function () {
     $socials = config('footer_socials');
     $header_links = config('header_links');
