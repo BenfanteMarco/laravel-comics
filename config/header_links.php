@@ -42,6 +42,6 @@ return [
     ],
     [
         'name' => 'HOME',
-        'url' => '/',
+        'url' => 'home',
     ],
 ];
